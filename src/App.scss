@@ -1,0 +1,372 @@
+//color
+$yellow: #ffc107;
+$yellow-90: rgba(#ffc107, 0.9);
+$yellow-80: rgba(#ffc107, 0.8);
+$yellow-40: rgba(#ffc107, 0.4);
+$blue-80: rgba(#0d6efd, 0.8);
+$blue-90: rgba(#0d6efd, 0.9);
+$danger: #dc3545;
+$danger-90: rgba(#dc3545, 0.9);
+$danger-80: rgba(#dc3545, 0.8);
+$secondary: #6c757d;
+$secondary-90: rgba(#6c757d, 0.9);
+$secondary-80: rgba(#6c757d, 0.8);
+$secondary-40: rgba(#6c757d, 0.4);
+$secondary-20: rgba(#6c757d, 0.2);
+$secondary-10: rgba(#6c757d, 0.1);
+$black: black;
+$success: #198754;
+$success-90: rgba(#198754, 0.9);
+$success-80: rgba(#198754, 0.8);
+$success-40: rgba(#198754, 0.4);
+$white: white;
+$white-80: rgba(white, 0.8);
+
+// reset
+html {
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 62px;
+}
+
+.avatar {
+	width: 32px;
+	height: 32px;
+	object-fit: cover;
+	object-position: center;
+	&-lg {
+		width: 40px;
+		height: 40px;
+		object-fit: cover;
+		object-position: center;
+	}
+	&-xl {
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.dropdown-item-custom:hover {
+	background-color: #eee !important;
+}
+
+.navbar-nav {
+	border-color: transparent !important;
+}
+
+.btn {
+	&-custom {
+		color: #6c757d;
+		outline: none !important;
+		&:hover,
+		&:active,
+		&:focus,
+		&:focus-visible {
+			border-color: transparent !important;
+			color: #333;
+		}
+	}
+}
+
+.nav-item-bold {
+	font-weight: bold;
+}
+
+//background
+.bg {
+	&-warning {
+		background: $yellow;
+		&-40 {
+			background: $yellow-40;
+		}
+		&-80 {
+			background: $yellow-80;
+		}
+		&-90 {
+			background: $yellow-90;
+			&-hover {
+				&:hover {
+					background: $yellow-90;
+				}
+			}
+		}
+	}
+	&-primary {
+		&-80 {
+			background: $blue-80 !important;
+		}
+		&-90 {
+			background: $blue-90 !important;
+			&-hover {
+				&:hover {
+					background: $blue-90 !important;
+				}
+			}
+		}
+	}
+	&-danger {
+		&-80 {
+			background: $danger-80 !important;
+			&-hover {
+				&:hover {
+					background: $danger-80 !important;
+				}
+			}
+		}
+		&-90 {
+			background: $danger-90;
+			&-hover {
+				&:hover {
+					background: $danger-90 !important;
+				}
+			}
+		}
+		&-hover {
+			&:hover {
+				background: $danger !important;
+			}
+		}
+	}
+	&-success {
+		&-40 {
+			background: $success-40 !important;
+		}
+		&-80 {
+			background: $success-80 !important;
+		}
+		&-90 {
+			background: $success-90;
+			&-hover {
+				&:hover {
+					background: $success-90 !important;
+				}
+			}
+		}
+		&-hover {
+			&:hover {
+				background: $success !important;
+			}
+		}
+	}
+	&-white {
+		&-80 {
+			&-hover {
+				&:hover {
+					background: $white-80;
+				}
+			}
+		}
+	}
+	&-secondary {
+		&-90 {
+			background: $secondary-90 !important;
+		}
+		&-80 {
+			background: $secondary-80 !important;
+		}
+		&-40 {
+			background: $secondary-40 !important;
+		}
+		&-20 {
+			background: $secondary-20 !important;
+		}
+		&-10 {
+			background: $secondary-10 !important;
+		}
+	}
+}
+
+// border-color
+.border {
+	&-warning {
+		&-40 {
+			border-color: $yellow-40 !important;
+		}
+	}
+	&-danger {
+		&-80 {
+			border-color: $danger-80 !important;
+			&-hover {
+				&:hover {
+					border-color: $danger-80 !important;
+				}
+			}
+		}
+		&-90 {
+			border-color: $danger-90 !important;
+		}
+		&-hover {
+			&:hover {
+				border-color: $danger !important;
+			}
+		}
+	}
+	&-black {
+		&-hover {
+			&:hover {
+				border-color: $black !important;
+			}
+		}
+	}
+	&-primary {
+		&-80 {
+			border-color: $blue-80 !important;
+		}
+		&-90 {
+			border-color: $blue-90 !important;
+			&-hover {
+				&:hover {
+					border-color: $blue-90 !important;
+				}
+			}
+		}
+	}
+	&-success {
+		&-80 {
+			border-color: $success-80 !important;
+		}
+		&-90 {
+			border-color: $success-90;
+			&-hover {
+				&:hover {
+					border-color: $success-90 !important;
+				}
+			}
+		}
+		&-hover {
+			&:hover {
+				border-color: $success !important;
+			}
+		}
+	}
+}
+
+// width
+.w {
+	&-auto {
+		width: auto;
+	}
+	&-40 {
+		width: 40%;
+	}
+	&-100 {
+		width: 100%;
+	}
+}
+
+// text-color
+.text {
+	&-secondary {
+		color: $secondary !important;
+		&-90 {
+			color: $secondary-90 !important;
+		}
+		&-80 {
+			color: $secondary-80 !important;
+		}
+		&-hover {
+			&:hover {
+				color: $secondary !important;
+			}
+		}
+	}
+	&-black {
+		&-hover {
+			&:hover {
+				color: $black !important;
+			}
+		}
+	}
+	&-danger {
+		&-80 {
+			color: $danger-80 !important;
+			&-hover {
+				&:hover {
+					color: $danger-80 !important;
+				}
+			}
+		}
+		&-90 {
+			color: $danger-90;
+			&-hover {
+				&:hover {
+					color: $danger-90 !important;
+				}
+			}
+		}
+		&-hover {
+			&:hover {
+				color: $danger !important;
+			}
+		}
+	}
+	&-primary {
+		&-80 {
+			color: $blue-80 !important;
+		}
+		&-90 {
+			color: $blue-90 !important;
+			&-hover {
+				&:hover {
+					color: $blue-90 !important;
+				}
+			}
+		}
+	}
+	&-yellow {
+		color: $yellow !important;
+		&-hover {
+			&:hover {
+				color: $yellow !important;
+			}
+		}
+		&-80 {
+			color: $yellow-80 !important;
+			&-hover {
+				&:hover {
+					color: $yellow-80 !important;
+				}
+			}
+		}
+		&-90 {
+			color: $yellow-90 !important;
+			&-hover {
+				&:hover {
+					color: $yellow-90 !important;
+				}
+			}
+		}
+	}
+	&-white {
+		&-hover {
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}
+
+.article {
+	&-title,
+	&-desc {
+		display: block;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-height: 48px;
+	}
+}
+
+.pc-lg {
+	@media screen and (max-width: 991px) {
+		display: none;
+	}
+}
